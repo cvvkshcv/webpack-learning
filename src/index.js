@@ -1,5 +1,5 @@
 import _ from 'lodash';
 
-function callMe() {
-  document.getElementById('h1').innerText = Math.random() * 10000;
-}
+document.getElementById('btn').addEventListener('click', () => {
+  document.getElementById('h1').innerText = _.random(1000);
+});
